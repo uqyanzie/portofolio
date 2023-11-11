@@ -28,17 +28,15 @@ export default function App() {
           <h5 className="mb-4">
             <a className="font-sans italic text-blue-600">uqyanzie@gmail.com</a> 
           </h5>
-          <ul className="text-gray-700 flex w-full gap-5">
+          <ul className="text-gray-600  flex w-full gap-5">
           <li>
-            <a>
-              <FontAwesomeIcon className="text-5xl" icon={faSquareGithub} />
-            </a>
+            <a href="https://github.com/uqyanzie" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="text-5xl hover:scale-[1.1] transition duration-100 hover:ease-in" icon={faSquareGithub} /></a>
           </li>
           <li>
-            <FontAwesomeIcon className="text-5xl" icon={faLinkedin} />
+            <a href="https://www.linkedin.com/in/uqyanzie-bintang-b210781b9/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="text-5xl hover:scale-[1.1] transition duration-100 hover:ease-in" icon={faLinkedin}/></a>
           </li>
           <li>
-            <FontAwesomeIcon className="text-5xl" icon={faInstagram} />
+            <a href="https://www.instagram.com/uqyanzie/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="text-5xl hover:scale-[1.1] transition duration-100 hover:ease-in" icon={faInstagram}/></a>
           </li>
         </ul>
         </div>
