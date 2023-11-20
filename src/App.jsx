@@ -13,7 +13,7 @@ export default function App() {
   return (
     <div className="flex flex-col lg:flex-row h-screen text-gray-700 font-poppins">
       <div className="lg:w-5/6 py-4 px-1 shadow-2xl">
-        <div className="me-auto pt-5 lg:ps-6 ps-8 mb-4">
+        <div className="me-auto pt-5 lg:p-6 p-8 mb-4">
           <img className="rounded-full w-32 h-32 mb-2" src="/fotopakejasmet.png" style={{objectFit: "cover"}}/>
           <div className="block">
             <h3 className="text-2xl font-semibold mb-2 font-poppins">Uqyanzie Bintang</h3>
@@ -51,7 +51,7 @@ export default function App() {
 
       <div className="flex-grow lg:overflow-y-scroll text-neutral-600">
         
-        <div className="px-10 py-5">
+        <div className="p-10">
           
           <div className="mb-10">
             <h3 className={`text-2xl font-semibold mb-3 bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient drop-shadow-lg `}>About</h3>
@@ -119,21 +119,21 @@ export default function App() {
                       </div>
                       <p className="font-inter">Beker WMS is a workshop management app, built for HBBA (Himpunan Bengkel Binaan Astra) organization</p>
                       <div className="flex flex-wrap pt-3 gap-3">
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           HTML5
-                        </a>
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        </div>
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           CSS3
-                        </a>
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        </div>
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           ReactJs
-                        </a>
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        </div>
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           NextJs
-                        </a>
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        </div>
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           Material UI
-                        </a>
+                        </div>
                       </div>
                     </div> 
                   </div>
@@ -155,24 +155,24 @@ export default function App() {
                       </div>
                       <p className="font-inter">Agpot is an IoT-based system development project that utilizes temperature, humidity and rainfall recording devices with solar panel energy sources that are integrated with internet servers and can be monitored through web pages.</p>
                       <div className="flex flex-wrap pt-3 gap-3">
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           HTML5
-                        </a>
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        </div>
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           CSS3
-                        </a>
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        </div>
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           ReactJs
-                        </a>
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        </div>
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           Tailwind CSS
-                        </a>
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        </div>
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           Daisy UI
-                        </a>
-                        <a className="rounded-full border border-blue-500 text-xs p-1 px-2">
+                        </div>
+                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
                           ApexCharts
-                        </a>
+                        </div>
                       </div>
                     </div> 
                   </div>
