@@ -108,7 +108,7 @@ export default function App() {
               <a className="hover:text-cyan-700" target="_blank" rel="noopener noreferrer">
                 <div className="rounded-lg p-[2.5px] bg-gradient-to-r from-blue-500 via-blue-100 to-cyan-600 hover-background-animate cursor-pointer hover:shadow-blue-300 shadow-lg hover:shadow-xl transition duration-100 hover:ease-in">
                   <div className="bg-sky-50 hover:bg-neutral-50 py-4 px-10 rounded-md gap-8 lg:flex transition duration-100 hover:ease-in hover:backd">
-                    <div className="max-w-[185px] mb-3 lg:mb-0 rounded-md h-fit shadow-xl shadow-gray-300">
+                    <div className="max-w-[200px] mb-3 lg:mb-0 rounded-md h-fit drop-shadow-xl shadow-gray-300">
                       <img className="rounded-md" src="/beker.png"/>
                     </div>
                     <div>
@@ -143,7 +143,7 @@ export default function App() {
               <a className="hover:text-cyan-700" href="https://agpot.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <div className="rounded-lg p-[2.5px] bg-gradient-to-r from-blue-500 via-blue-100 to-cyan-600 hover-background-animate cursor-pointer hover:shadow-blue-300 shadow-lg hover:shadow-xl transition duration-100 hover:ease-in">
                   <div className="bg-sky-50 hover:bg-neutral-50 py-4 px-10 rounded-md gap-8 lg:flex transition duration-100 hover:ease-in hover:opacity-90">
-                    <div className="max-w-[185px] mb-3 lg:mb-0 rounded-md h-fit shadow-xl shadow-gray-300">
+                    <div className="max-w-[200px] mb-3 lg:mb-0 rounded-md h-fit drop-shadow-xl shadow-gray-300">
                       <img className="rounded-md" src="/dashboard.png"/>
                     </div>
                     <div>
