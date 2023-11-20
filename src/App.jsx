@@ -18,7 +18,7 @@ export default function App() {
           <div className="block">
             <h3 className="text-2xl font-semibold mb-2 font-poppins">Uqyanzie Bintang</h3>
             <h5 className="font-sans text-md text-gray-500 mb-4">Final Year Software Engineering Student</h5>
-            <p className="font-inter lg:w-full w-[60%] text-neutral-800 font-medium">
+            <p className="font-inter pr-8 lg:pr-0 text-neutral-800 font-medium">
               Passionate in contributing codes and designs to innovative and impactful software solutions.
             </p>
           </div>
