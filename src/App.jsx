@@ -111,7 +111,7 @@ export default function App() {
             <h3 className={`text-2xl font-semibold mb-5 bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient drop-shadow-lg`}>Working Experiences</h3>
             
             <div className="flex flex-col gap-5">
-              //Working Experiences
+
               {
                 workingExperiences.map((experience, index) => (
                   <WorkingExperienceCard 
