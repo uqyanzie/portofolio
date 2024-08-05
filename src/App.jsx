@@ -1,6 +1,8 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSquareGithub, faLinkedin, faInstagram} from "@fortawesome/free-brands-svg-icons"
+import { WorkingExperienceCard } from "./components/WorkingExperienceCard"
+import { ProjectCard } from "./components/ProjectCard"
 
 export default function App() {
 
@@ -8,6 +10,46 @@ export default function App() {
   const via = 'via-blue-300'
   const to =  'to-cyan-400'
 
+  const workingExperiences = [
+    {
+      date: "June 2021 - Sept 2023",
+      position: "Frontend Developer Intern",
+      companyName: "PT Padepokan Tujuh Sembilan",
+      companyWebLink: "https://www.tujuhsembilan.com/",
+      description: "Contributing on the Workshop Management System project development, implementing a responsive, user-friendly and modern UI design, adding the functionality and interactivity for the app, and also collaborate with the team to integrate all the features."
+    }
+  ]
+
+  const projects = [
+    {
+      imageUrl: "/asset-transfer.png",
+      projectName: "Web and IOT Based Automatic Asset Transfer Recording System for Badan Pertahanan Kota Bandung",
+      description: "A system prototype to provide record asset transfer between rooms in the building automatically and record it on the web dashboard.",
+      link: "",
+      tools: ["PHP Programming Languange", "Laravel", "MySQL", "HTML", "CSS", "Javascript", "HiveMQ", "Arduino"]
+    },
+    {
+      imageUrl : "/platform-library.png",
+      projectName: "Naval Platform Library",
+      description: "Naval Platform Library is a web-based application that provides an naval information library for the indonesian navy to access and manage their knowledge of worldwide naval units and its specifications, components and abilities.",
+      link: "",
+      tools: ["ReactJs", "Go Programming Languange", "gRPC", "PostgreSQL"] 
+    },
+    {
+      imageUrl: "/beker.png",
+      projectName: "Beker WMS",
+      description: "Beker WMS is a workshop management app, built for HBBA (Himpunan Bengkel Binaan Astra) organization. It manages the workshop master data, customer data, customer vehicle data, provides cashier system & invoice printing, and also manages service execution processing and reporting.",
+      link: "",
+      tools: ["HTML5", "CSS3", "ReactJs", "NextJs", "Material UI", "Java Springboot"]
+    },
+    {
+      imageUrl: "/dashboard.png",
+      projectName: "AGPOT Dashboard",
+      description: "Agpot is an IoT-based application that utilizes temperature, humidity and rainfall recording devices with solar panel energy sources that are integrated with internet servers and can be monitored through web pages.",
+      link: "https://agpot.vercel.app/",
+      tools: ["HTML5", "CSS3", "ReactJs", "Tailwind CSS", "Daisy UI", "ApexCharts"]
+    }
+  ]
 
 
   return (
@@ -67,35 +109,21 @@ export default function App() {
 
           <div className="mb-10">
             <h3 className={`text-2xl font-semibold mb-5 bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient drop-shadow-lg`}>Working Experiences</h3>
-
+            
             <div className="flex flex-col gap-5">
-
-              <a className="hover:text-cyan-700" href="https://www.tujuhsembilan.com/" target="_blank" rel="noopener noreferrer">
-                <div className="rounded-lg p-[2.5px] bg-gradient-to-r from-blue-500 via-blue-100 to-cyan-600 hover-background-animate cursor-pointer hover:shadow-blue-300 shadow-lg hover:shadow-xl transition duration-100 hover:ease-in">
-                  <div className="bg-sky-50 hover:bg-neutral-50 py-4 px-10 rounded-md gap-8 transition duration-100 hover:ease-in hover:opacity-90">
-                    <div className="block lg:flex gap-3 h-full">
-                      <div className="inline font-poppins text-sm w-[28%] self-center font-semibold">
-                        June 2021 - Sept 2023
-                      </div>
-                      <div className="hidden lg:block h-[100] bg-blue-500 border rounded-full w-[8px]"></div>
-                      <div className="lg:ms-2 block mt-2 lg:mt-1">
-                        <div className="flex align-middle hover:scale-[1.03] mb-2">
-                          <div className="flex flex-col md:inline-flex lg:flex-row">
-                            <h5 className="text-lg font-semibold mr-1">Frontend Developer Intern</h5>
-                            <h5 className="hidden lg:flex text-lg font-semibold mr-1">·</h5>  
-                            <h5 className="text-lg font-semibold mr-1">
-                              PT Padepokan Tujuh Sembilan 
-                            </h5>    
-                          </div>
-                          <svg className="text-sm mt-1 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
-                        </div>
-                        <p className="font-inter">Contributing on the Workshop Management System project development, implementing a responsive, user-friendly and modern UI design, adding the functionality and interactivity for the app, and also collaborate with the team to integrate all the features.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>       
-
+              //Working Experiences
+              {
+                workingExperiences.map((experience, index) => (
+                  <WorkingExperienceCard 
+                    key={index} 
+                    position={experience.position}
+                    companyName={experience.companyName} 
+                    companyWebLink={experience.companyWebLink} 
+                    date={experience.date} 
+                    description={experience.description}
+                  />
+                ))
+              }
             </div>
 
           </div>
@@ -105,79 +133,18 @@ export default function App() {
 
             <div className="flex flex-col gap-8">
 
-              <a className="hover:text-cyan-700" target="_blank" rel="noopener noreferrer">
-                <div className="rounded-lg p-[2.5px] bg-gradient-to-r from-blue-500 via-blue-100 to-cyan-600 hover-background-animate cursor-pointer hover:shadow-blue-300 shadow-lg hover:shadow-xl transition duration-100 hover:ease-in">
-                  <div className="bg-sky-50 hover:bg-neutral-50 py-4 px-10 rounded-md gap-8 lg:flex transition duration-100 hover:ease-in hover:backd">
-                    <div className="max-w-[200px] mb-3 lg:mb-0 rounded-md h-fit drop-shadow-xl shadow-gray-300">
-                      <img className="rounded-md" src="/beker.png"/>
-                    </div>
-                    <div>
-                      <div className="inline-flex hover:scale-[1.03]">
-                        <h5 className="text-lg font-semibold mr-1 mb-2">
-                          Beker WMS
-                        </h5>  
-                      </div>
-                      <p className="font-inter">Beker WMS is a workshop management app, built for HBBA (Himpunan Bengkel Binaan Astra) organization. It manages the workshop master data, customer data, customer vehicle data, provides cashier system & invoice printing, and also manages service execution processing and reporting.</p>
-                      <div className="flex flex-wrap pt-3 gap-3">
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          HTML5
-                        </div>
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          CSS3
-                        </div>
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          ReactJs
-                        </div>
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          NextJs
-                        </div>
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          Material UI
-                        </div>
-                      </div>
-                    </div> 
-                  </div>
-                </div>
-              </a>        
-
-              <a className="hover:text-cyan-700" href="https://agpot.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <div className="rounded-lg p-[2.5px] bg-gradient-to-r from-blue-500 via-blue-100 to-cyan-600 hover-background-animate cursor-pointer hover:shadow-blue-300 shadow-lg hover:shadow-xl transition duration-100 hover:ease-in">
-                  <div className="bg-sky-50 hover:bg-neutral-50 py-4 px-10 rounded-md gap-8 lg:flex transition duration-100 hover:ease-in hover:opacity-90">
-                    <div className="max-w-[200px] mb-3 lg:mb-0 rounded-md h-fit drop-shadow-xl shadow-gray-300">
-                      <img className="rounded-md" src="/dashboard.png"/>
-                    </div>
-                    <div>
-                      <div className="inline-flex hover:scale-[1.03]">
-                        <h5 className="text-lg font-semibold mr-1 mb-2">
-                          AGPOT Dashboard
-                        </h5>  
-                        <svg className="text-sm mt-1 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
-                      </div>
-                      <p className="font-inter">Agpot is an IoT-based application that utilizes temperature, humidity and rainfall recording devices with solar panel energy sources that are integrated with internet servers and can be monitored through web pages.</p>
-                      <div className="flex flex-wrap pt-3 gap-3">
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          HTML5
-                        </div>
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          CSS3
-                        </div>
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          ReactJs
-                        </div>
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          Tailwind CSS
-                        </div>
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          Daisy UI
-                        </div>
-                        <div className="rounded-full border border-blue-500 text-xs p-1 px-2">
-                          ApexCharts
-                        </div>
-                      </div>
-                    </div> 
-                  </div>
-                </div>
-              </a>                    
+              {
+                projects.map((project, index) => (
+                  <ProjectCard 
+                    key={index}
+                    imageUrl={project.imageUrl}
+                    projectName={project.projectName}
+                    description={project.description}
+                    link={project.link}
+                    tools={project.tools}
+                  />
+                ))
+              }                  
 
             </div>
 
