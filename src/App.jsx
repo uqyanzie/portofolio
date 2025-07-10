@@ -23,16 +23,14 @@ export default function App() {
       position: "Backend Developer",
       companyName: "PT Alpha Jaya Inovasi",
       companyWebLink: "https://www.alphajayainovasi.com",
-      description: ""
+      description: "Contibuting in API & Backend applications development, which also gives me the opportunity to learn about system design, database design, and API implementation for various business in fulfilling company's clients needs. By working with the team also gives me the chance to learn about agile development, coordination, and communication with the team and clients. I also have the opportunity to work on several projects, which gives me some experiences in solving some business issue into creating a useful product to help them growing and maintaining their business."
     },
     {
       date: "June 2021 - Sept 2023",
       position: "Frontend Developer Intern",
       companyName: "PT Padepokan Tujuh Sembilan",
       companyWebLink: "https://www.tujuhsembilan.com/",
-      description: `Contibuting in API & Backend applications development, which also gives me the opportunity to learn about system design, database design, and API implementation for various business in fulfilling company's clients needs. 
-      By working with the team also gives me the chance to learn about agile development, coordination, and communication with the team and clients. 
-      I also have the opportunity to work on several projects, which gives me some experiences in solving some business issue into creating a useful product to help them growing and maintaining their business.`
+      description: "Contributing on the Workshop Management System project development, implementing a responsive, user-friendly and modern UI design, adding the functionality and interactivity for the app, and also collaborate with the team to integrate all the features."
     }
   ]
 
