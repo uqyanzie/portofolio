@@ -73,7 +73,7 @@ export default function App() {
           <img className="rounded-full w-32 h-32 mb-2" src="/fotopakejasmet.png" style={{objectFit: "cover"}}/>
           <div className="block">
             <h3 className="text-2xl font-semibold mb-2 font-poppins">Uqyanzie Bintang</h3>
-            <h5 className="font-sans text-md text-gray-500 mb-4">Fresh Graduate Software Engineer</h5>
+            <h5 className="font-sans text-md text-gray-500 mb-4">Software Engineer</h5>
             <p className="font-inter pr-8 lg:pr-0 text-neutral-800 font-medium">
               Passionate in contributing codes and designs to innovative and impactful software solutions.
             </p>
@@ -113,8 +113,7 @@ export default function App() {
             <h3 className={`text-2xl font-semibold mb-3 bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient drop-shadow-lg `}>About</h3>
             <div className="flex flex-col gap-5">
               <p className="font-inter">
-                2024 Fresh Graduate from Software Engineering major. 
-                Seeking career at <strong>software development Industries</strong>, and have been working on several projects to solve people problems.
+                Pursuing a career at <strong>software development Industries</strong>, and have been working on several projects to solve people problems.
                 I am eager to further develop my skills as a software engineer and contribute my expertise to challenging projects. If you are interested in collaborating or discussing potential opportunities, feel free to reach me out. 
                 Let's connect and build the future together!
               </p>
@@ -143,7 +142,7 @@ export default function App() {
           </div>
 
           <div className="mb-10">
-            <h3 className={`text-2xl font-semibold mb-3 bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient drop-shadow-lg`}>Projects</h3>
+            <h3 className={`text-2xl font-semibold mb-3 bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient drop-shadow-lg`}>Projects & Contributions</h3>
 
             <div className="flex flex-col gap-8">
 

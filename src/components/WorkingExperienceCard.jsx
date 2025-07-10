@@ -6,13 +6,13 @@ export function WorkingExperienceCard({
     return (
         <a className="hover:text-cyan-700" href={companyWebLink} target="_blank" rel="noopener noreferrer">
                 <div className="rounded-lg p-[2.5px] bg-gradient-to-r from-blue-500 via-blue-100 to-cyan-600 hover-background-animate cursor-pointer hover:shadow-blue-300 shadow-lg hover:shadow-xl transition duration-100 hover:ease-in">
-                  <div className="bg-sky-50 hover:bg-neutral-50 py-4 px-10 rounded-md gap-8 transition duration-100 hover:ease-in hover:opacity-90">
+                  <div className="bg-sky-50 hover:bg-neutral-50 py-5 px-10 lg:ps-5 lg:px-10 rounded-md gap-8 transition duration-100 hover:ease-in hover:opacity-90">
                     <div className="block lg:flex gap-3 h-full">
-                      <div className="inline font-poppins text-sm w-[28%] self-center font-semibold">
+                      <div className="inline font-poppins text-sm lg:w-[15%] self-center font-semibold">
                         {date}
                       </div>
                       <div className="hidden lg:block h-[100] bg-blue-500 border rounded-full w-[8px]"></div>
-                      <div className="lg:ms-2 block mt-2 lg:mt-1">
+                      <div className="lg:ms-2 block mt-2 lg:mt-1 lg:w-[85%]">
                         <div className="flex align-middle hover:scale-[1.03] mb-2">
                           <div className="flex flex-col md:inline-flex lg:flex-row">
                             <h5 className="text-lg font-semibold mr-1">{position}</h5>
