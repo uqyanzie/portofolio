@@ -21,7 +21,7 @@ export function ProjectCard({
                         </svg>
                         )}
                       </div>
-                      <p className="font-inter">{description}</p>
+                      <p className="font-inter" dangerouslySetInnerHTML={{ __html: description }}/>
                       <div className="flex flex-wrap pt-3 gap-3 justify-self-end">
                         {tools.map((tool, index) => (
                             <div key={index} className="rounded-full border border-blue-500 text-xs p-1 px-2">

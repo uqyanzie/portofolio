@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faSquareGithub, faLinkedin, faInstagram} from "@fortawesome/free-brands-svg-icons"
+import { faSquareGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { WorkingExperienceCard } from "./components/WorkingExperienceCard"
 import { ProjectCard } from "./components/ProjectCard"
 
@@ -8,7 +8,7 @@ export default function App() {
 
   const from = 'from-blue-700'
   const via = 'via-blue-300'
-  const to =  'to-cyan-400'
+  const to = 'to-cyan-400'
 
   const workingExperiences = [
     {
@@ -16,7 +16,14 @@ export default function App() {
       position: "Backend Developer",
       companyName: "CV Lintas Expansi Usaha (LIXUS)",
       companyWebLink: "https://lixus.id/",
-      description: "Develop and maintaining CRM System integrating the whatsapp chatbot and control center dashboard for Enfagrow (a well known brand for its growth formula powder milk for children) with marketings and engineers team. The work involves system & database designing, coding, API & query implementation, multiple system & service integrations and also discuss with the team in proposing ideas to fulfill the brand’s requirements and interests"
+      description: `
+      <ul>
+        <li> -	Collaborated with a team of five (consists of marketing and engineer team) on Enfagrow CRM development and maintenance. </li>
+        <li> -	Contributed to system & database design, coding, API & query implementation, third party integrations, discussing and executing the proposed ideas with the team to fulfil the brand’s requirements and interests</li>
+        <li> -	Documented and resolved customer journey-tracking issues, contributing to increased client sales through segmented and personalized marketing offers.</li>
+        <li> -	Increased valid prospects by introducing a new sales team performance dashboard & tracker mechanism that monitors every new customer acquisition.</li>
+      </ul>
+      `
     },
     {
       date: "October 2024 - Now",
@@ -36,6 +43,14 @@ export default function App() {
 
   const projects = [
     {
+      imageUrl: "/enfamama.png",
+      projectName: "Enfagrow CRM",
+      description: `Enfamama A+ Club is a customer loyalty and CRM platform in the infant and child nutrition FMCG industry, supporting Enfagrow’s digital engagement strategy.
+      The platform manages large-scale customer acquisition, validation, segmentation, and retention workflows, and plays a critical role in driving new user conversion, repeat purchases, and personalized marketing campaigns`,
+      link: "https://www.enfa.co.id/loyalty-program",
+      tools: ["Typescript", "NodeJs", "MikroOrm", "PostgreSQL", "GCP"]
+    },
+    {
       imageUrl: "/asset-transfer.png",
       projectName: "Web and IOT Based Automatic Asset Transfer Recording System for Badan Pertahanan Kota Bandung",
       description: "A system prototype to provide record asset transfer between rooms in the building automatically and record it on the web dashboard.",
@@ -43,11 +58,11 @@ export default function App() {
       tools: ["PHP Programming Languange", "Laravel", "MySQL", "HTML", "CSS", "Javascript", "HiveMQ", "Arduino"]
     },
     {
-      imageUrl : "/platform-library.png",
+      imageUrl: "/platform-library.png",
       projectName: "Naval Platform Library",
       description: "Naval Platform Library is a web-based application that provides an naval information library for the indonesian navy to access and manage their knowledge of worldwide naval units and its specifications, components and abilities.",
       link: "",
-      tools: ["ReactJs", "Go Programming Languange", "gRPC", "PostgreSQL"] 
+      tools: ["ReactJs", "Go Programming Languange", "gRPC", "PostgreSQL"]
     },
     {
       imageUrl: "/beker.png",
@@ -70,7 +85,7 @@ export default function App() {
     <div className="flex flex-col lg:flex-row h-screen text-gray-700 font-poppins">
       <div className="lg:w-5/6 py-4 px-1 shadow-2xl">
         <div className="me-auto pt-5 lg:p-6 p-8 mb-4">
-          <img className="rounded-full w-32 h-32 mb-2" src="/fotopakejasmet.png" style={{objectFit: "cover"}}/>
+          <img className="rounded-full w-32 h-32 mb-2" src="/fotopakejasmet.png" style={{ objectFit: "cover" }} />
           <div className="block">
             <h3 className="text-2xl font-semibold mb-2 font-poppins">Uqyanzie Bintang</h3>
             <h5 className="font-sans text-md text-gray-500 mb-4">Software Engineer</h5>
@@ -82,19 +97,19 @@ export default function App() {
         <div className="px-8 lg:px-6 mt-10 mb-4">
           <h4 className="font-semibold">Reach me on : </h4>
           <h5 className="mb-4">
-            <a className="font-sans italic text-blue-600">uqyanzie@gmail.com</a> 
+            <a className="font-sans italic text-blue-600">uqyanzie@gmail.com</a>
           </h5>
           <ul className="text-gray-600  flex w-full gap-5">
-          <li>
-            <a href="https://github.com/uqyanzie" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="text-5xl hover:scale-[1.1] transition duration-100 hover:ease-in" icon={faSquareGithub} /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/uqyanzie-bintang-b210781b9/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="text-5xl hover:scale-[1.1] transition duration-100 hover:ease-in" icon={faLinkedin}/></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/uqyanzie/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="text-5xl hover:scale-[1.1] transition duration-100 hover:ease-in" icon={faInstagram}/></a>
-          </li>
-        </ul>
+            <li>
+              <a href="https://github.com/uqyanzie" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="text-5xl hover:scale-[1.1] transition duration-100 hover:ease-in" icon={faSquareGithub} /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/uqyanzie-bintang-b210781b9/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="text-5xl hover:scale-[1.1] transition duration-100 hover:ease-in" icon={faLinkedin} /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/uqyanzie/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="text-5xl hover:scale-[1.1] transition duration-100 hover:ease-in" icon={faInstagram} /></a>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -102,37 +117,38 @@ export default function App() {
       <p>.</p> 
       </div> */}
       <div className="bg-blue-500 text-blue-500 shadow shadow-xl shadow-blue-400 lg:w-1 w-[80%] h-1 lg:h-[85%] lg:mt-4 rounded-full self-center lg:-ms-[2px]">
-      <p>.</p> 
+        <p>.</p>
       </div>
 
       <div className="flex-grow lg:overflow-y-scroll text-neutral-600">
-        
+
         <div className="p-10">
-          
+
           <div className="mb-10">
             <h3 className={`text-2xl font-semibold mb-3 bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient drop-shadow-lg `}>About</h3>
             <div className="flex flex-col gap-5">
               <p className="font-inter">
-                Pursuing a career at <strong>software development Industries</strong>, and have been working on several projects to solve people problems.
-                I am eager to further develop my skills as a software engineer and contribute my expertise to challenging projects. If you are interested in collaborating or discussing potential opportunities, feel free to reach me out. 
-                Let's connect and build the future together!
+                Software Engineer with solid full-stack experience, specializing in building scalable and high-performance web applications, APIs and integrating multiple systems in cloud environments.
+                Proven ability to collaborate across teams, lead system design discussions, and turn complex requirements into reliable, maintainable solutions.
+                Adapt quickly to new technologies and environments, motivated by technical challenges and opportunities for deeper architectural ownership.
+                Committed to clean code, continuous improvement, and clear communication.
               </p>
             </div>
           </div>
 
           <div className="mb-10">
             <h3 className={`text-2xl font-semibold mb-5 bg-gradient-to-r ${from} ${via} ${to} text-transparent bg-clip-text bg-300% animate-gradient drop-shadow-lg`}>Working Experiences</h3>
-            
+
             <div className="flex flex-col gap-5">
 
               {
                 workingExperiences.map((experience, index) => (
-                  <WorkingExperienceCard 
-                    key={index} 
+                  <WorkingExperienceCard
+                    key={index}
                     position={experience.position}
-                    companyName={experience.companyName} 
-                    companyWebLink={experience.companyWebLink} 
-                    date={experience.date} 
+                    companyName={experience.companyName}
+                    companyWebLink={experience.companyWebLink}
+                    date={experience.date}
                     description={experience.description}
                   />
                 ))
@@ -148,7 +164,7 @@ export default function App() {
 
               {
                 projects.map((project, index) => (
-                  <ProjectCard 
+                  <ProjectCard
                     key={index}
                     imageUrl={project.imageUrl}
                     projectName={project.projectName}
@@ -157,7 +173,7 @@ export default function App() {
                     tools={project.tools}
                   />
                 ))
-              }                  
+              }
 
             </div>
 
