@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 export function WorkingExperienceCard({
     date, position, companyName, companyWebLink, description  
@@ -31,3 +32,12 @@ export function WorkingExperienceCard({
               </a>
     )
 }
+
+WorkingExperienceCard.propTypes = {
+  imageUrl: PropTypes.string,
+  date : PropTypes.string, 
+  position : PropTypes.string, 
+  companyName : PropTypes.string, 
+  companyWebLink : PropTypes.string,
+  description: PropTypes.string
+};

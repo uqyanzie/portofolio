@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export function ProjectCard({
     imageUrl = '', projectName = '', description = '', link = '', tools = []  
 }) {
@@ -35,4 +37,12 @@ export function ProjectCard({
               </a>
     )
 }
+
+ProjectCard.propTypes = {
+  imageUrl: PropTypes.string,
+  projectName: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  link: PropTypes.string,
+  tools: PropTypes.arrayOf(PropTypes.string),
+};
 
